@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
+
 /**
  * @Description: 用户信息
  * @Author: LiuRunYong
@@ -18,7 +20,7 @@ import lombok.experimental.Accessors;
 @NoArgsConstructor
 @Accessors(chain = true)
 @TableName(value = "user")
-public class UserModel {
+public class UserModel implements Serializable {
 
     /**
      * 用户主键
